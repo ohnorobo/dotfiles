@@ -21,11 +21,6 @@ function prompt_skwp_precmd {
     git-info on
     git-info
   fi
-
-  # Get ruby information
-  if (( $+functions[ruby-info] )); then
-    ruby-info
-  fi
 }
 
 function prompt_skwp_setup {

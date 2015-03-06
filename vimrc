@@ -10,7 +10,7 @@ endif
 
 " ================ General Config ====================
 
-set number                      "Line numbers are good
+" set number                      "Line numbers are a waste of space
 set backspace=indent,eol,start  "Allow backspace in insert mode
 set history=1000                "Store lots of :cmdline history
 set showcmd                     "Show incomplete cmds down the bottom
@@ -71,7 +71,8 @@ filetype indent on
 " Display tabs and trailing spaces visually
 set list listchars=tab:\ \ ,trail:·
 
-set nowrap       "Don't wrap lines
+" set nowrap       "Don't wrap lines
+set wrap lbr
 set linebreak    "Wrap lines at convenient points
 
 " ================ Folds ============================
@@ -101,6 +102,20 @@ set wildignore+=*.png,*.jpg,*.gif
 set scrolloff=8         "Start scrolling when we're 8 lines away from margins
 set sidescrolloff=15
 set sidescroll=1
+" allow mac scrolling
+set mouse=a
+
+" allow good movement with linebreaks
+nnoremap j gj
+nnoremap k gk
+vnoremap j gj
+vnoremap k gk
+nnoremap <Down> gj
+nnoremap <Up> gk
+vnoremap <Down> gj
+vnoremap <Up> gk
+inoremap <Down> <C-o>gj
+inoremap <Up> <C-o>gk
 
 " ================ Search ===========================
 

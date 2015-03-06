@@ -1,5 +1,6 @@
 let vimsettings = '~/.vim/settings'
 let uname = system("uname -s")
+let g:pydiction_location = '~/.yadr/vim/bindle/pydiction/complete-dict'
 
 for fpath in split(globpath(vimsettings, '*.vim'), '\n')
 
