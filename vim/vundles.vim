@@ -81,7 +81,7 @@ Bundle "majutsushi/tagbar.git"
 Bundle "mattn/webapi-vim.git"
 Bundle "rking/ag.vim"
 Bundle "scrooloose/nerdtree.git"
-Bundle "scrooloose/syntastic.git"
+" notBundle "scrooloose/syntastic.git"
 Bundle "sjbach/lusty.git"
 Bundle "sjl/gundo.vim"
 Bundle "skwp/YankRing.vim"
@@ -115,8 +115,8 @@ Bundle "thinca/vim-textobj-function-javascript"
 Bundle "vim-scripts/argtextobj.vim"
 
 " Cosmetics, color scheme, Powerline...
-Bundle "chrisbra/color_highlight.git"
-Bundle "skwp/vim-colors-solarized"
+" notBundle "chrisbra/color_highlight.git"
+" notBundle "skwp/vim-colors-solarized"
 Bundle "skwp/vim-powerline.git"
 Bundle "vim-scripts/TagHighlight.git"
 Bundle "itspriddle/vim-jquery.git"
@@ -124,6 +124,10 @@ Bundle "slim-template/vim-slim.git"
 Bundle "bogado/file-line.git"
 Bundle "tpope/vim-rvm.git"
 Bundle "nelstrom/vim-visual-star-search"
+Bundle "hdima/python-syntax"
+
+" Julia
+Bundle 'JuliaLang/julia-vim'
 
 " Customization
 " The plugins listed in ~/.vim/.vundles.local will be added here to

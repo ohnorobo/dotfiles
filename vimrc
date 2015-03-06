@@ -36,9 +36,9 @@ let mapleader=","
 " =============== Vundle Initialization ===============
 " This loads all the plugins specified in ~/.vim/vundle.vim
 " Use Vundle plugin to manage all other plugins
-if filereadable(expand("~/.vim/vundles.vim"))
-  source ~/.vim/vundles.vim
-endif
+" if filereadable(expand("~/.vim/vundles.vim"))
+"   source ~/.vim/vundles.vim
+" endif
 
 " ================ Turn Off Swap Files ==============
 
@@ -64,14 +64,26 @@ set softtabstop=2
 set tabstop=2
 set expandtab
 
-filetype plugin on
+" filetype plugin on
 filetype indent on
 
 " Display tabs and trailing spaces visually
 set list listchars=tab:\ \ ,trail:·
 
-set nowrap       "Don't wrap lines
+" set nowrap       "Don't wrap lines
+set wrap lbr
 set linebreak    "Wrap lines at convenient points
+
+nnoremap j gj
+nnoremap k gk
+vnoremap j gj
+vnoremap k gk
+nnoremap <Down> gj
+nnoremap <Up> gk
+vnoremap <Down> gj
+vnoremap <Up> gk
+inoremap <Down> <C-o>gj
+inoremap <Up> <C-o>gk
 
 " ================ Folds ============================
 
@@ -101,3 +113,9 @@ set wildignore+=*.png,*.jpg,*.gif
 set scrolloff=8         "Start scrolling when we're 8 lines away from margins
 set sidescrolloff=15
 set sidescroll=1
+set mouse=a         "scroll with touchpad
+
+
+" ================ Search ========================
+
+:set hlsearch
