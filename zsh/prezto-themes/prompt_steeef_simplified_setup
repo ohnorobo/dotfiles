@@ -90,8 +90,8 @@ function prompt_steeef_simplified_setup {
   zstyle ':prezto:module:python:info:virtualenv' format '(%v)'
 
   # Define prompts.
-  PROMPT="${_prompt_steeef_simplified_colors[3]}%n%f@${_prompt_steeef_simplified_colors[2]}%m%f ${_prompt_steeef_simplified_colors[5]}%~%f "'${vcs_info_msg_0_}'"$ "
-  RPROMPT='%F{blue}${ruby_info[version]}'
+  PROMPT="${_prompt_steeef_simplified_colors[3]}%n%f@${_prompt_steeef_simplified_colors[2]}%m%f ${_prompt_steeef_simplified_colors[5]}%~%f "'${vcs_info_msg_0_}'$'\n'
+  # RPROMPT='%F{blue}${ruby_info[version]}'
 }
 
 prompt_steeef_simplified_setup "$@"
